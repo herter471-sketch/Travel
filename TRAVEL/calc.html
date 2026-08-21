@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/setka.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- отдельный слайд слайдера 1 -->
+        <div class="mySlides">
+            <div class="row justify__content__center">
+                <div class="col-8">
+                    <div class="col-12 block__head tc">
+                        <h2 class="calc__title2">Узнавайте стоимость проживания в хостеле</h2>
+                    </div>
+                    <form class="container-b">
+                        <div class="row justify__content__center">
+                            <div class="col-12">
+                                <h3 class="form__option">Выберите комнату для проживания<span>*</span></h3>
+                            </div>						
+                            <div class="col-6">
+                                <div class="block"><img src="img/hotel.jpg" alt="" class="img__fluid"/><p class="room__text"><input type="checkbox" id="n_p" value="1200"/> На 1 человека</p></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="block"><img src="img/hotel.jpg" alt="" class="img__fluid"/><p class="room__text"><input type="checkbox" id="n_p" value="1750" checked=""/> На 2 человека</p></div>
+                            </div>	
+                            <div class="col-6">	
+                                <div class="block"><img src="img/hotel.jpg" alt="" class="img__fluid"/><p class="room__text"><input type="checkbox" id="n_p" value="2100"/> На 3 человека</p></div>
+                            </div>		
+                            <div class="col-6">	
+                                <div class="block"><img src="img/hotel.jpg" alt="" class="img__fluid"/><p class="room__text"><input type="checkbox" id="n_p" value="2500"/> На 4 человека</p></div>
+                            </div>	
+                            <div class="col-6">	
+                                <div class="block"><img src="img/hotel.jpg" alt="" class="img__fluid"/><p class="room__text"><input type="checkbox" id="n_p" value="2750"/> На 5 человека</p></div>
+                                </div>		
+                            <div class="col-6">
+                                <div class="block"><img src="img/hotel.jpg" alt="" class="img__fluid"/><p class="room__text">Своё кол-во<br/><input type="radio" id="n_p" value="3150"/>На 6 человека<br/><input type="radio" id="n_p" value="0"/><input type="text" id="n_p" value="0"/></p></div>
+                            </div>
+                        </div>		
+                    </form>
+                    <button class="next__but" onclick="plusSlides(1)">Дальше</button>
+                </div>
+                <div class="col-4">
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="row">
+                                    <div class="discount__title"><p class="discount__title__text">Ваша скидка: 1%</p></div>
+                                   <div class="col-8"> <p class="discount__title__text">Анна</p>
+                                    <p class="text__discount">Менеджер</p></div>
+                                <div class="col-12">
+                                    <div class="text__discount__box">
+                                        <p class="text__discount">Тут идёт какой-то поясняющий текст, который поможет сделать выбор</p>
+                                    </div>	
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- отдельный слайд слайдера 2 -->
+        <div class="mySlides">
+            <div class="row justify__content__center">
+                <div class="col-8">
+                    <div class="col-12 block__head tc">
+                        <h2 class="calc__title2">Узнавайте стоимость проживания в хостеле</h2>
+                    </div>
+                    <form class="container-b">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="form__option">На какое количество дней планируете пребывать в хостеле?</h3>
+                            </div>
+                            <div class="col-12">
+                                <span id="rangeValue">10</span>
+                            </div>	
+                            <div class="col-11">
+                                <input type="range" min="1" max="20" value="10" class="slider" id="mySlide" list="rangeList" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+                                <datalist id="rangeList">
+                                <option value="1" label="1">
+                                <option value="2" label="2">
+                                <option value="3" label="3">
+                                <option value="4" label="4">
+                                <option value="5" label="5">
+                                <option value="6" label="6">
+                                <option value="7" label="7">
+                                <option value="8" label="8">
+                                <option value="9" label="9">
+                                <option value="10" label="10">
+                                <option value="11" label="11">
+                                <option value="12" label="12">
+                                <option value="13" label="13">
+                                <option value="14" label="14">
+                                <option value="15" label="15">
+                                <option value="16" label="16">
+                                <option value="17" label="17">
+                                <option value="18" label="18">
+                                <option value="19" label="19">
+                                <option value="20" label="20">
+                                </datalist>
+                            </div>
+                        </div>		
+                    </form>
+                    <button class="prev__but" onclick="plusSlides(-1)">Назад</button>
+                    <button class="next__but" onclick="plusSlides(1)">Дальше</button>
+                </div>
+                <div class="col-4">
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="row">
+                                    <div class="discount__title"><p class="discount__title__text">Ваша скидка: 2%</p></div>
+                                   <div class="col-8"> <p class="discount__title__text">Анна</p>
+                                    <p class="text__discount">Менеджер</p></div>
+                                <div class="col-12">
+                                    <div class="text__discount__box">
+                                        <p class="text__discount">Тут идёт какой-то поясняющий текст, который поможет сделать выбор</p>
+                                    </div>	
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- отдельный слайд слайдера 3 -->
+        <div class="mySlides">
+            <div class="row justify__content__center">
+                <div class="col-8">
+                    <div class="col-12 block__head tc">
+                        <h2 class="calc__title2">Узнавайте стоимость проживания в хостеле</h2>
+                    </div>
+                    <form class="container-b">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="form__option">В какое время планируете заселиться?<span>*</span></h3>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="radio" id="time__come" value="650">Утром</p>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="radio" id="time__come" value="500">Обед</p>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="radio" id="time__come" value="650">Вечером</p>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="radio" id="time__come" value="800">Ночью</p>
+                            </div>
+                        </div>	
+                    </form>
+                    <button class="prev__but" onclick="plusSlides(-1)">Назад</button>
+                    <button class="next__but" onclick="plusSlides(1)">Дальше</button>
+                </div>
+                <div class="col-4">
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="row">
+                                    <div class="discount__title"><p class="discount__title__text">Ваша скидка: 3%</p></div>
+                                   <div class="col-8"> <p class="discount__title__text">Анна</p>
+                                    <p class="text__discount">Менеджер</p></div>
+                                <div class="col-12">
+                                    <div class="text__discount__box">
+                                        <p class="text__discount">Тут идёт какой-то поясняющий текст, который поможет сделать выбор</p>
+                                    </div>	
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- отдельный слайд слайдера 4 -->
+        <div class="mySlides">
+            <div class="row justify__content__center">
+                <div class="col-8">
+                    <div class="col-12 block__head tc">
+                        <h2 class="calc__title2">Узнавайте стоимость проживания в хостеле</h2>
+                    </div>
+                    <form class="container-b">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="form__option">Какие дополнительные услуги вам необходимы?</h3>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="checkbox" id="wyn" value="150" checked="">Завтрак</p>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="checkbox" id="wyn" value="250">Стиральная машинка</p>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="checkbox" id="wyn" value="200">Постельное бельё</p>
+                            </div>
+                            <div class="col-11 block">
+                                <p><input type="checkbox" id="wyn" value="300">Набор для линой гигиены</p>
+                            </div>
+                        </div>	
+                    </form>
+                    <button class="prev__but" onclick="plusSlides(-1)">Назад</button>
+                    <button class="next__but" onclick="plusSlides(1)">Дальше</button>
+                </div>
+                <div class="col-4">
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="row">
+                                    <div class="discount__title"><p class="discount__title__text">Ваша скидка: 4%</p></div>
+                                   <div class="col-8"> <p class="discount__title__text">Анна</p>
+                                    <p class="text__discount">Менеджер</p></div>
+                                <div class="col-12">
+                                    <div class="text__discount__box">
+                                        <p class="text__discount">Тут идёт какой-то поясняющий текст, который поможет сделать выбор</p>
+                                    </div>	
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- отдельный слайд слайдера 5 -->
+        <div class="mySlides">
+            <div class="row justify__content__center">
+                <div class="col-8">
+                    <div class="col-12 block__head tc">
+                        <h2 class="calc__title2">Узнавайте стоимость проживания в хостеле</h2>
+                    </div>
+                    <form class="container-b">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="form__option">Ваши пожелания к проживанию (необязательно)</h3>
+                            </div>
+                            <div class="col-11">
+                                <p><input type="text" id="comment" class="comment__need"></p>
+                            </div>
+                        </div>	
+                    </form>
+                    <button class="prev__but" onclick="plusSlides(-1)">Назад</button>
+                    <button class="next__but" onclick="plusSlides(1)">Дальше</button>
+                </div>
+                <div class="col-4">
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="row">
+                                    <div class="discount__title"><p class="discount__title__text">Ваша скидка: 5%</p></div>
+                                   <div class="col-8"> <p class="discount__title__text">Анна</p>
+                                    <p class="text__discount">Менеджер</p></div>
+                                <div class="col-12">
+                                    <div class="text__discount__box">
+                                        <p class="text__discount">Тут идёт какой-то поясняющий текст, который поможет сделать выбор</p>
+                                    </div>	
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mySlides">
+            <div class="container">
+                <div class="row justify__content__center">
+                    <div class="col-12 block__head tc">
+                        <h2 class="calc__title2">Узнавайте стоимость проживания в хостеле</h2>
+                    </div>
+                    <form class="container-b">
+                        <div class="row justify__content__center">
+                            <div class="col-8">
+                                <h3 class="form__title3__last">Введите Ваши данные, чтобы получить результаты расчёта и подарок за потраченное время, в виде скидки</h3>
+                            </div>
+                            <div class="col-5">
+                                <img class="img__fluid" src="img/gift.jpg" alt="" />
+                            </div>
+                            <div class="col-12">
+                                <div class="row justify__content__between">
+                                    <div class="col-4">
+                                        <h3 class="form__contact">Ваше Имя<span>*</span></h3>
+                                        <input type="text" class="form__contact__block" id="form__contact__name"/>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3 class="form__contact">Номер телефона<span>*</span></h3>
+                                        <input type="tel" class="form__contact__block" id="form__contact__tel"/>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3 class="form__contact">E-mail адрес<span>*</span></h3>
+                                        <input type="email" class="form__contact__block" id="form__contact__email"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>		
+                    </form>
+                 </div>
+                 <div class="row justify__content__between">
+                    <button class="col-2 prev__but" onclick="plusSlides(-1)">Назад</button>
+                    <div class="col-2">
+                    <input class="cost__but" type="submit" onclick="func()" id="btn" value="ЗАБРОНИРОВАТЬ">
+                        <label class="form__label">Итоговая цена</label>
+                        <label class="form__label" id='price'>0</label>
+                    </div>
+                    <button class="col-2 next__but" onclick="plusSlides(1)" id="btn__submit">Отправить</button>
+                </div>	
+             </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

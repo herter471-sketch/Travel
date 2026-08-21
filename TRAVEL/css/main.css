@@ -1,0 +1,199 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/fon.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+.header__title {
+    color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 30px;
+    
+}
+.header__block {
+    top: 35%;
+    position: relative;
+}
+.header__subtitle {
+    color: #fff;
+    font-size: 34px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+.header__link {
+    color: #3c3c3c;
+    background-color: #ffe100;
+    box-shadow: none;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+/*Калькулятор*/
+/* .mySlides {
+	display: none;
+} */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+.container-b {
+	width: 100%;
+	padding: 0 15px;
+}
+.block__head {
+	width: 100%;
+	background-color: #ececec;
+}
+.calc__title2 {
+	padding: 10px;
+	line-height: 1.2;
+	font-size: 21px;
+}
+.form__option {
+	padding: 20px 0 5px 0;
+	line-height: 1.2;
+	font-size: 15px;
+}
+h3 span{
+	color: red;
+}
+.col-5 img {
+	width: 90%;
+	margin: 15px;
+}
+.next__but {
+	margin-top: 10px;
+	background-color: #008a00;
+	color: #ffffff;
+	padding: 10px 25px;
+	line-height: 1.5;
+	font-size: 20px;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	float: right;
+}
+.prev__but {
+	margin-top: 10px;
+	background-color: #dfdfdf;
+	color: #000000;
+	padding: 10px 25px;
+	line-height: 1.5;
+	font-size: 20px;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	float: left;
+}
+.next__but:hover {
+	background-color: #c2ffbd;
+	color: #000000;
+}
+.block {
+	width: 90%;
+	height: 85%;
+	border: solid 1px #8a8a8a;
+	border-radius: 5px;
+	margin: 5px 0;
+	padding: 5px;
+}
+.room__text {
+	padding: 0 25px 35px;
+}
+.discount__title {
+	background: #ffdd6f;
+	width: 87%;
+	height: 90%;
+	margin: 10px;
+	padding: 10px;
+}
+.discount__ava {
+	width: 90%!important;
+	height: 85px;
+	padding-left: 10px;
+	border-radius: 50%;
+}
+.text__discount__box{
+	width: 88%;
+	background-color: #ffffff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	margin-left: 10px;
+	padding: 10px;
+}
+/*скока ночей*/
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/*чо ещё надо?*/
+.comment__need {
+	width: 100%;
+	height: 150px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.form__title3__last {
+	color:#00007f;
+	font-family: Arial;
+	font-size: 25px;
+	line-height: 1.2;
+	text-align: center;
+}
+/*форма обратки*/
+.cost__but {
+	margin-top: 10px;
+	background-color: #ebd800;
+	color: #000000;
+	line-height: 1.5;
+	font-size: 20px;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+.cost__but:hover {
+	background-color: #fff9a2;
+}
+.form__contact__block {
+	width: 94%;
+	border: solid 1px #8a8a8a;
+	border-radius: 5px;
+	margin: 5px 0;
+	padding: 5px;
+}
+.form__label {
+	color: #000000;
+}
